@@ -1,0 +1,33 @@
+{
+  "name": "mongob.js",
+  "version": "0.0.1",
+  "description": "Handle MongoDB objects inside classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cekkr/MongOb.js.git"
+  },
+  "keywords": [
+    "mongo",
+    "db",
+    "object",
+    "class",
+    "inhert",
+    "extends",
+    "mongodb"
+  ],
+  "author": "Riccardo Cecchini",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/cekkr/MongOb.js/issues"
+  },
+  "homepage": "https://github.com/cekkr/MongOb.js#readme",
+  "dependencies": {
+    "asynquence-contrib": "^0.27.0",
+    "gulp": "^3.9.1",
+    "mongodb": "^2.2.19"
+  }
+}
