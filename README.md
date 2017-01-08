@@ -65,7 +65,7 @@ console.log('testDog $$:', testDog.$$);
 
 existingDog.Save((err, res)=>{
   let theSameExistingDog = new DogSchema(testDog._id).Proxy;
-  console.log(testDog owner:', theSameExistingDog.owner.$$);
+  console.log('testDog owner:', theSameExistingDog.owner.$$);
 });
 //Watch results
 ```
