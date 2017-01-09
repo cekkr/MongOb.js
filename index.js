@@ -248,8 +248,9 @@ function getProxySchema(target){
       }
       else {
         obj.$$checkObject();
-        if (obj.$$[name])
-          return obj[name];
+        if (obj.$$[name]) {
+          return obj.$$[name];
+        }
         else
           return undefined;
       }

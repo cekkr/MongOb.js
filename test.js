@@ -13,6 +13,24 @@ class DogSchema extends MongObj.Schema{
   get $$collectionName(){ return "dogs"; }
   get $$mongoConnection(){ return mongoConnection; }
 
+  get $$pathsOptions(){
+    return {
+      "owner":{
+        authorization:{
+          userId: 23
+        },
+        permission:{
+          "rule==1":{
+            write: 1
+          },
+          "rule==2":{
+            read: 1
+          }
+        }
+      }
+    }
+  }
+
   sayBau() {
     this.$$.dogSays = "bau";
     this.Save();
